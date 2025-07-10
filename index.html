@@ -1,133 +1,177 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Envio para Webhook n8n</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-    }
+<html lang="en">
+	<head>
 
-    .form-container {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      width: 320px;
-    }
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    h2 {
-      margin-bottom: 1rem;
-    }
+		<title>Exemplos N8N</title>	
 
-    label {
-      display: block;
-      margin-bottom: 0.3rem;
-      margin-top: 1rem;
-    }
+		<meta name="keywords" content="WebSite Template" />
+		<meta name="description" content="Exemplos de usos do N8N">
+		<meta name="author" content="okler.net">
 
-    input {
-      width: 100%;
-      padding: 0.5rem;
-      box-sizing: border-box;
-    }
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/logos/n8n-logo.png" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="img/logos/n8n-logo.png">
 
-    button {
-      margin-top: 1.5rem;
-      width: 100%;
-      padding: 0.7rem;
-      background: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
-    .message {
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      padding: 0.8rem;
-      border-radius: 5px;
-      display: none;
-    }
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
 
-    .message.success {
-      color: #155724;
-      background-color: #d4edda;
-      border: 1px solid #c3e6cb;
-      display: block;
-    }
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
 
-    .message.error {
-      color: #721c24;
-      background-color: #f8d7da;
-      border: 1px solid #f5c6cb;
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <div class="form-container">
-    <h2>Enviar dados</h2>
-    <form id="webhookForm">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
 
-      <button type="submit">Enviar</button>
-      <div class="message" id="mensagem"></div>
-    </form>
-  </div>
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
 
-  <script>
-    const form = document.getElementById("webhookForm");
-    const mensagem = document.getElementById("mensagem");
+	</head>
+	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 0, 'effect': 'pulse'}">
+		<div class="loading-overlay">
+			<div class="bounce-loader">
+				<div class="wrapper-pulse">
+					<div class="cssload-pulse-loader"></div>
+				</div>
+			</div>
+		</div>
 
-    // 👉 Substitua pela URL do seu webhook de produção no n8n
-    const WEBHOOK_URL = "http://3.23.17.54:5678/webhook/api";
+		<div class="body">
+			<div role="main" class="main">
+				<div id="examples" class="container py-2">
+					<div class="row mb-5 pb-3">
+						<div class="col-lg-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+						</div>
+					</div>
+					<div class="row mb-5 pb-3">
+					</div>
+					<h1 class="font-weight-extra-bold text-color-primary line-height-1 text-12 d-flex" style="justify-content: center; display: flex; padding: 24px;">TESTE&nbsp&nbspALGUMAS&nbsp&nbspFUNCIONALIDADES&nbsp&nbspDO&nbsp&nbspN8N</h1>
+					<div class="row mb-5 pb-3">
+						<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+							<div class="card flip-card flip-card-3d text-center rounded-0" style="background-color: #2D2E2E;">
+								<div class="flip-front p-5" style="border-radius: 30px; background-color: #4b4b4b;">
+									<div class="flip-content my-4">
+										<strong class="font-weight-extra-bold line-height-1 text-13 mb-3 d-inline-flex text-color-primary">01</strong>
+										<h4 class="font-weight-bold text-4 text-color-primary">FIRST STEP</h4>
+										<p class="text-color-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+									</div>
+								</div>
+								<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/01banner-grande.jpg); background-size: cover; background-position: center; border-radius: 30px; background-color: rgba(0, 0, 0, 0.7); background-blend-mode: darken;">
+									<div class="flip-content my-4">
+										<h4 class="font-weight-bold" style="color: white;">FIRST MEETING</h4>
+										<p class="font-weight-light" style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+										<a href="01.html" class="btn btn-light btn-modern text-color-primary font-weight-bold">LEARN MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-    form.addEventListener("submit", async function (event) {
-      event.preventDefault();
+						<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+							<div class="card flip-card flip-card-3d text-center rounded-0" style="background-color: #2D2E2E;">
+								<div class="flip-front p-5" style="border-radius: 30px; background-color: #EF4E39;">
+									<div class="flip-content my-4">
+										<strong class="font-weight-extra-bold line-height-1 text-13 mb-3 d-inline-block" style="color: white;">02</strong>
+										<h4 class="font-weight-bold text-4" style="color: white;">SECOND STEP</h4>
+										<p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+									</div>
+								</div>
+								<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center; border-radius: 30px;">
+									<div class="flip-content my-4">
+										<h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
+										<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+										<a href="#" class="btn btn-primary font-weight-bold">LEARN MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-      const nome = document.getElementById("nome").value;
-      const email = document.getElementById("email").value;
+						<div class="col-md-6 col-lg-4 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+							<div class="card flip-card flip-card-3d text-center rounded-0" style="background-color: #2D2E2E;">
+								<div class="flip-front p-5" style="border-radius: 30px; background-color: #d3d3d3;">
+									<div class="flip-content my-4">
+										<strong class="font-weight-extra-bold text-color-dark line-height-1 text-13 mb-3 d-inline-block">03</strong>
+										<h4 class="font-weight-bold text-color-dark text-4">THIRD STEP</h4>
+										<p class="text-color-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>	
+									</div>
+								</div>
+								<div class="flip-back d-flex align-items-center p-5" style="background-image: url(img/generic/generic-corporate-17-1.jpg); background-size: cover; background-position: center; border-radius: 30px;">
+									<div class="flip-content my-4">
+										<h4 class="font-weight-bold text-color-light">FIRST MEETING</h4>
+										<p class="font-weight-light text-color-light opacity-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id varius.</p>
+										<a href="#" class="btn btn-light btn-modern text-color-dark font-weight-bold">LEARN MORE</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-      const payload = { nome, email };
+				</div>
 
-      try {
-        const response = await fetch(WEBHOOK_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(payload)
-        });
+				
 
-        const data = await response.json();
-        console.log(data)
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
 
-        if (response.ok) {
-          mensagem.innerText = data.resposta || "Dados enviados com sucesso!";
-          mensagem.className = "message success";
-          form.reset();
-        } else {
-          mensagem.innerText = "Erro ao enviar os dados.";
-          mensagem.className = "message error";
-        }
-      } catch (error) {
-        mensagem.innerText = "Erro de conexão com o servidor.";
-        mensagem.className = "message error";
-        console.error("Erro:", error);
-      }
-    });
-  </script>
-</body>
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	</body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Garante que a transição fade-in aconteça ao carregar
+			document.body.style.opacity = 1;
+			document.body.style.transition = "opacity 0.5s ease-in-out";
+
+			// Adiciona fade-out ao clicar em qualquer link interno
+			document.querySelectorAll('a[href]').forEach(link => {
+			link.addEventListener('click', function (e) {
+				const href = this.getAttribute('href');
+
+				// Ignora âncoras e links externos
+				if (
+				href.startsWith('#') ||
+				href.startsWith('mailto:') ||
+				href.startsWith('javascript:') ||
+				this.target === "_blank"
+				) {
+				return;
+				}
+
+				e.preventDefault();
+
+				// Fade-out
+				document.body.style.opacity = 0;
+
+				// Redireciona após a transição
+				setTimeout(() => {
+				window.location.href = href;
+				}, 500); // mesmo tempo da transição
+			});
+			});
+		});
+	</script>
+
 </html>

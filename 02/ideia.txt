@@ -1,0 +1,30 @@
+TREINE SEU PRÓPRIO ATENDENTE
+
+💬 2. Atendimento Pré-Venda via WhatsApp com Qualificação Automatizada
+
+Objetivo: Qualificar leads e iniciar atendimento via WhatsApp de forma automática com base nas informações do site.
+🧩 Como funciona:
+
+    Input do usuário no site: Formulário simples com nome, número de WhatsApp e área de interesse.
+
+    n8n valida o número e verifica duplicidade (para evitar spam).
+
+    Envia mensagem automática via WhatsApp (usando Twilio, 360dialog, Z-API ou Gupshup) com perguntas qualificadoras:
+
+        "Você está buscando uma solução para marketing, vendas ou operações?"
+
+    As respostas são tratadas com regras simples no n8n para definir a qualificação do lead.
+
+    Se o lead for quente, é redirecionado para um vendedor. Caso contrário, recebe conteúdo automático (e-book, vídeo, case).
+
+🧠 Benefício empresarial:
+
+    Garante respostas rápidas no canal preferido do usuário (WhatsApp).
+
+    Automatiza a triagem de leads, economizando tempo da equipe.
+
+💡 Extras:
+
+    Integração com CRM.
+
+    Pode usar IA para classificar a urgência da mensagem do usuário.

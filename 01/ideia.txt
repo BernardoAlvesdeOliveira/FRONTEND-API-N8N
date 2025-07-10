@@ -1,0 +1,35 @@
+CONSULTOR EMPRESARIAL
+
+🧠 1. Consultor de Pitch de Startup com IA
+
+Categoria: IA / Input Criativo / NLP
+Nome da Página: "Valide sua Ideia de Startup com IA"
+Ideia:
+
+O usuário descreve sua ideia de startup (ex: "Quero fazer um app que conecta freelancers e clientes em tempo real") e o n8n, via OpenAI, analisa a ideia e dá feedback em 4 pontos:
+
+    Potencial de mercado
+
+    Público-alvo
+
+    Sugestões de melhorias
+
+    Pontos fracos
+
+Workflow (n8n):
+
+    Input via formulário (descrição da ideia)
+
+    n8n envia para OpenAI (com prompt customizado estilo consultor de produto)
+
+    IA retorna análise detalhada
+
+    n8n formata a resposta e envia de volta ao site ou por e-mail/WhatsApp
+
+🔁 Extra (opcional): Armazena ideias em Airtable e permite votar nas melhores (ranking ao vivo).
+
+🎯 Impacto visual:
+
+    Feedback em cards visuais (como se fosse um pitch deck)
+
+    Pode gerar um PDF com o parecer da IA

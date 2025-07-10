@@ -1,0 +1,7 @@
+MANIPULANDO ARQUIVOS(DE TODO TIPO) VINDOS DO WhatsApp
+
+- O usuário vai enviar um arquivo(de qualquer tipo)
+
+- O workflow vai fazer o tratamento dos arquivos
+
+- Vai enviar as resposta de forma para (WhatsApp, email e de forma visual para o usuário)
