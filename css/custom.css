@@ -1,0 +1,8 @@
+input.valid, input.error,
+textarea.valid, textarea.error {
+    background-image: none !important;
+    background-position: right center !important;
+    background-repeat: no-repeat;
+    border-color: initial !important;
+    box-shadow: none !important;
+}
